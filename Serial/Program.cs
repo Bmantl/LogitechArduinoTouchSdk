@@ -61,14 +61,14 @@ namespace Serial
             port = new SerialPort("COM3",
                 9600, Parity.None, 8, StopBits.One);
 
-            port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
+                port.DataReceived += new SerialDataReceivedEventHandler(port_DataReceived);
             // Begin communications 
-            port.Open();
-            while (true)
-            {
+                port.Open();
+                while (true)
+                {
                 
-            }
-        });
+                }
+            });
 
             listeningThread.IsBackground = true;
             listeningThread.Start();
